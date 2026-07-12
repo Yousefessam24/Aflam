@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحميل لعبة أفلام 🎬</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background: radial-gradient(circle at top, #1e1b4b, #020617);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            padding: 20px;
+        }
+
+        /* الكارت الزجاجي */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 24px;
+            padding: 40px 20px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        /* اللوجو */
+        .logo {
+            font-size: 3.5rem;
+            font-weight: 900;
+            background: linear-gradient(45deg, #ff007a, #7928ca);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0px 4px 10px rgba(255, 0, 122, 0.3));
+            margin-bottom: 5px;
+            animation: pulse 2s infinite alternate;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            margin-bottom: 30px;
+        }
+
+        /* مميزات اللعبة */
+        .features-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: right;
+            background: rgba(255, 255, 255, 0.02);
+            padding: 20px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.05rem;
+            color: #cbd5e1;
+            font-weight: 700;
+        }
+
+        .feature-item i {
+            color: #38ef7d;
+            font-size: 1.2rem;
+            width: 25px;
+            text-align: center;
+        }
+
+        /* زرار التحميل */
+        .download-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #ff007a 0%, #7928ca 100%);
+            color: white;
+            text-decoration: none;
+            padding: 16px 20px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(255, 0, 122, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .download-btn:hover {
+            box-shadow: 0 12px 25px rgba(255, 0, 122, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .version {
+            display: block;
+            margin-top: 15px;
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+
+        /* أنيميشن */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); filter: drop-shadow(0px 0px 10px rgba(255, 0, 122, 0.3)); }
+            100% { transform: scale(1.05); filter: drop-shadow(0px 0px 25px rgba(255, 0, 122, 0.7)); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glass-card">
+        <h1 class="logo">🎬 أفلام</h1>
+        <p class="subtitle">لعبة القعدات الحلوة وتحدي الصحاب!</p>
+        
+        <div class="features-list">
+            <div class="feature-item">
+                <i class="fa-solid fa-film"></i>
+                <span>1000 فيلم ومسلسل متنوعين</span>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-users"></i>
+                <span>نظام فرق وعداد نقط ذكي</span>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-wifi"></i>
+                <span>بتشتغل أوفلاين بالكامل</span>
+            </div>
+        </div>
+
+        <a href="https://www.mediafire.com/file/1yyhb5mnl996lte/Aflam+1.2.0.apk/file" class="download-btn">
+            <i class="fa-brands fa-android" style="font-size: 1.4rem;"></i>
+            <span>تحميل للأندرويد (APK)</span>
+        </a>
+        
+        <span class="version">الإصدار 1.2.0 • مجانية بالكامل</span>
+    </div>
+
+</body>
+</html>
